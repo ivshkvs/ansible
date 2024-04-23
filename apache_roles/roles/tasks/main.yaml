@@ -1,6 +1,5 @@
 ---
-# tasks file for apache_html_roles
-
+# Tasks file for apache_html_roles
 - block:
    - name: installing apache for debian-based systems
      apt: name=apache2 state=latest
@@ -20,4 +19,4 @@
   notify:
    - restart apache debian
    - restart apache redhat
-
+---
